@@ -1,0 +1,251 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+<style>
+  .bg-image-container {
+    background: url("{% static 'images/bg-1.svg' %}") no-repeat;
+    background-size: contain;
+    background-position: left top;
+  }
+
+  .bg-image-container-right {
+    background: url("{% static 'images/bg-2.svg' %}") no-repeat;
+    background-size: contain;
+    background-position: right top;
+  }
+
+  .bg-image-container-left {
+    background: url("{% static 'images/bg-2.svg' %}") no-repeat;
+    background-size: contain;
+    background-position: left top;
+  }
+
+  .bg-image-container-middle {
+    background: url("{% static 'images/bg-3.svg' %}") no-repeat;
+    background-size: contain;
+    background-position: center top;
+  }
+</style>
+<div class="flex pt-28 justify-center min-h-screen bg-[#f7faff]">
+  <div class="text-center bg-image-container">
+    <h2
+      class="text-2xl text-[#4b81fb] font-bold mb-4 uppercase"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      About Us
+    </h2>
+    <h1 class="text-6xl font-bold text-center text-[#201e62] w-[90%] mx-auto">
+      Our mission is to make the diagnosis of several faster and more accurate.
+    </h1>
+    <p
+      class="mt-10 text-[#73729c] text-lg font-medium text-center w-[55%] mx-auto"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure unde veniam
+      voluptates dolorem adipisci suscipit enim possimus labore. Expedita
+      excepturi porro blanditiis dolore aliquid sapiente doloribus nisi
+      voluptatem dicta odio.
+    </p>
+    <div>
+      <button
+        class="bg-[#4b81fb] text-white px-8 py-3 rounded-full mt-10"
+        style="font-family: 'Plus Jakarta Sans', sans-serif"
+      >
+        Learn More
+      </button>
+
+      <button
+        class="bg-[#f7faff] text-[#4b81fb] px-8 py-3 rounded-full mt-10 border-2 border-[#4b81fb] ml-5"
+        style="font-family: 'Plus Jakarta Sans', sans-serif"
+      >
+        Contact Us
+      </button>
+    </div>
+  </div>
+  <div
+    class="absolute right-0 top-0 w-full h-full bg-image-container-right"
+  ></div>
+</div>
+<div class="bg-blue-500">
+  <div class="flex justify-center">
+    <img src="{% static 'images/dotors.svg' %}" alt="" class="mt-[-140px]" />
+  </div>
+</div>
+<div class="flex gap-10 pt-20 pl-20 items-center">
+  <div class="w-[50%] bg-image-container-right">
+    <h2
+      class="text-2xl text-[#4b81fb] font-bold mb-4 uppercase"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      Our story
+    </h2>
+    <h2
+      class="text-5xl font-bold text-[#201e62]"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      MedAssist started in 2024 with one big mission behind
+    </h2>
+    <p
+      class="mt-10 text-[#73729c] text-lg font-medium"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo perferendis
+      vitae repellendus ut possimus tempora itaque laboriosam vero, enim minus,
+      repudiandae aut quaerat saepe unde sequi modi cupiditate veniam? Nulla,
+      omnis culpa sequi, commodi unde mollitia non minima dolorum fugit facilis
+      vitae?
+    </p>
+
+    <p
+      class="mt-10 text-[#73729c] text-lg font-medium"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo perferendis
+      vitae repellendus ut possimus tempora itaque laboriosam vero, enim minus,
+      repudiandae aut quaerat saepe unde sequi modi cupiditate veniam? Nulla,
+      omnis culpa sequi, commodi unde mollitia non minima dolorum fugit facilis
+      vitae?
+    </p>
+  </div>
+  <div>
+    <img src="{% static 'images/female.svg' %}" alt="" />
+  </div>
+</div>
+
+<div class="flex flex-row-reverse gap-10 pt-20 pr-20 items-center bg-[#f7faff]">
+  <div class="w-[50%] bg-image-container-right">
+    <h2
+      class="text-2xl text-[#4b81fb] font-bold mb-4 uppercase"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      Our Mission
+    </h2>
+    <h2
+      class="text-5xl font-bold text-[#201e62]"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      Our mission is to make the diagnosis of several faster and more accurate
+      and.
+    </h2>
+    <p
+      class="mt-10 text-[#73729c] text-lg font-medium"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo perferendis
+      vitae repellendus ut possimus tempora itaque laboriosam vero, enim minus,
+      repudiandae aut quaerat saepe unde sequi modi cupiditate veniam? Nulla,
+      omnis culpa sequi, commodi unde mollitia non minima dolorum fugit facilis
+      vitae?
+    </p>
+
+    <p
+      class="mt-10 text-[#73729c] text-lg font-medium"
+      style="font-family: 'Plus Jakarta Sans', sans-serif"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo perferendis
+      vitae repellendus ut possimus tempora itaque laboriosam vero, enim minus,
+      repudiandae aut quaerat saepe unde sequi modi cupiditate veniam? Nulla,
+      omnis culpa sequi, commodi unde mollitia non minima dolorum fugit facilis
+      vitae?
+    </p>
+  </div>
+  <div>
+    <img src="{% static 'images/doc.svg' %}" alt="" />
+  </div>
+</div>
+<div class="pt-20 px-20">
+  <h2
+    class="text-2xl text-[#4b81fb] font-bold mb-4 uppercase"
+    style="font-family: 'Plus Jakarta Sans', sans-serif"
+  >
+    Our Mission
+  </h2>
+  <h2 class="text-3xl font-extrabold text-[#201e62] w-[50%]">
+    The values that guide us are the same values that guide our customers.
+  </h2>
+  <div class="grid grid-cols-2 gap-10 mt-10">
+    <div class="flex gap-5 shadow-lg p-5 rounded-lg bg-image-container-left">
+      <img src="{% static 'images/care.svg' %}" alt="" />
+      <div>
+        <div class="border-b border-gray-400 w-[90%] mt-5">
+          <h3
+            class="font-bold text-3xl text-[#201e62] p-3"
+            style="font-family: 'Plus Jakarta Sans', sans-serif"
+          >
+            Empathy
+          </h3>
+        </div>
+        <p
+          class="mt-5 text-[#73729c] text-lg font-medium"
+          style="font-family: 'Plus Jakarta Sans', sans-serif"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          consequatur doloribus eveniet repudiandae tenetur asperiores
+          reiciendis id quasi nam iste?
+        </p>
+      </div>
+    </div>
+    <div class="flex gap-5 shadow-lg p-5 rounded-lg bg-image-container-middle">
+      <img src="{% static 'images/respo.svg' %}" alt="" />
+      <div>
+        <div class="border-b border-gray-400 w-[90%] mt-5">
+          <h3
+            class="font-bold text-3xl text-[#201e62] p-3"
+            style="font-family: 'Plus Jakarta Sans', sans-serif"
+          >
+            Responsability
+          </h3>
+        </div>
+        <p
+          class="mt-5 text-[#73729c] text-lg font-medium"
+          style="font-family: 'Plus Jakarta Sans', sans-serif"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          consequatur doloribus eveniet repudiandae tenetur asperiores
+          reiciendis id quasi nam iste?
+        </p>
+      </div>
+    </div>
+    <div class="flex gap-5 shadow-lg p-5 rounded-lg bg-image-container-middle">
+      <img src="{% static 'images/acces.svg' %}" alt="" />
+      <div>
+        <div class="border-b border-gray-400 w-[90%] mt-5">
+          <h3
+            class="font-bold text-3xl text-[#201e62] p-3"
+            style="font-family: 'Plus Jakarta Sans', sans-serif"
+          >
+            Care and services
+          </h3>
+        </div>
+        <p
+          class="mt-5 text-[#73729c] text-lg font-medium"
+          style="font-family: 'Plus Jakarta Sans', sans-serif"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          consequatur doloribus eveniet repudiandae tenetur asperiores
+          reiciendis id quasi nam iste?
+        </p>
+      </div>
+    </div>
+    <div class="flex gap-5 shadow-lg p-5 rounded-lg bg-image-container-right">
+      <img src="{% static 'images/respo.svg' %}" alt="" />
+      <div>
+        <div class="border-b border-gray-400 w-[90%] mt-5">
+          <h3
+            class="font-bold text-3xl text-[#201e62] p-3"
+            style="font-family: 'Plus Jakarta Sans', sans-serif"
+          >
+            Accessibility
+          </h3>
+        </div>
+        <p
+          class="mt-5 text-[#73729c] text-lg font-medium"
+          style="font-family: 'Plus Jakarta Sans', sans-serif"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          consequatur doloribus eveniet repudiandae tenetur asperiores
+          reiciendis id quasi nam iste?
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
